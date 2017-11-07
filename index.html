@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;  
+  min-height: 100%;
+  min-width: 100%;
+  font-family: helvetica neue,arial,helvetica,freesans,liberation sans,numbus sans l,sans-serif;
+  line-height: 1.5;
+}
+h1{
+  background: rgba(255,255,255,0.5);
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 0px;
+  z-index: 99999999999;
+}
+a{
+  color: #444;
+  font-size: 18px;
+}
+.shqipe{
+  position: absolute;
+  height: 30px;
+  width: 28px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAEoElEQVRIS62Wd6jWZRiGL83SpqbZztQGmasiGkZDLbFBUUGZI1DUIq2gQRtSygGlpaKVKyGzKCr9w9AMI7dFaeQoNTXatm2XGlfeL3x81PHk8YXD+b7f93ufcT/3cz9PPeBw4DzgVWAr0AA4BDgSaA88kOevAW8CrwO/svPsC3QGzgcuAhoDDwHvAZ8CXwN/AQcAlwAL6gHnApOBEcCMGOoK7A9cBpwEvA/0ApYDfYCNee9YYBrQCXgWOBnYALycoOYBO4DrgHuAATpsDowBTgMmAUuBP4A2gL9fAbQFWuXyeGBoHGrkFqB+glgNzAK2AWuAvYGzgP7JerAG9wPOAM4GLgR+C1TCtRIwSp8NBLoDHxlpjIrMccBc4AmgESA6HYHfgV/yzDIsAZbpsB3wGPA08EHwvga4EfgTWAHcAXwXw80ShFBZt2+BixPkaOAUYB9gYkr0E3AC0A+4TYcHpdDW5scUuSnQJLD9kOxeSMYSScg8e6W+ZiT0U6rufRMS6kN+3F1qeCbweRhrVtcCfVNDvwvXk2HyMXFW/n0SBprBTcnO7CXTc6njF7G9XIcya2oYuCnpS/XjQwYNm5H0FirvVB6NSzLbyYw9PlsPzAc+BGSzSfXzskYuBy6IYWsiEXpWGKjyscuvBiiEOrU8BrLAdtGhEN0MfAYcDByaaE7dpdmaX5DhtthXIZZCMk6HRnAXcDQwM1jfCxxWR4dbgGFRHBH8EhiuQ/8OBBqmoa9M/4i7Db07xxrKB9XqlcijfblVZx0AddKmlXHXp6b31aGG24GRwIshZMsIQbeiNDau5HkrFNep0qYK7c5RYVYB04HZkU2DmK1Dvd8Q+FQRs7R+MlXJs/i2jhOkpqNovANINgNXxO2/o0IaHT6lQ8liwyq0Cq79dDXwiC8AgyPQPney+F7lURikvNQXxglJ4HbgpUwNxd9WGa9DDah1QqhBpUtVURPN0tHkPHNaGEg1kYxcw4q6ULaOar0dPTaJN4C1wDodqiji7CD+PrJmz1yl9kVfeyR6p4bD1zJ4Nqf21tp3bXYZPzwt9nGIoy7bFpfq0IidibaFD6WvR4is6YMRbydJt1Ddzx6Hs1vCnCCkRN6fSV8EXjKajHa3lB60TkdkpAiBL52YiP1vZkMyqG/NdqBDjT8KDMrvztB1kUWD8p6lcgArBGN1aK2M3M8S4+fMQeefUmddDUDIhMv1oUwM5VDo3V1cUaznonwvGuodiaUYzNOJq4VLlNPAaNxXzMoXlDgFQcKIgJm4MFUeHYyNhKkuEufhlMRJ4V0J84+Al2khKU5Po9pLMu2cTHlJcmdYKJurHS5MO8noUUHJ2i9OL9qXTh43uek6lCw6cK2TAGZW4C3zTZZ1CfskgBB7nIMObldJdx/L4Cnzs9gSVsuwvnqY/puSGK3TWzF3qjwOtMiL0l6YFQnr6SrpWvGfpzYOC5OFzDVC6RMinxuI9XYFUcoKQnVy6GUb2zrb8O9GiXSoBjttDMKml+E1ntpkWAxYa5nsOtk7D5/PZ2tdBGOPOSyGXIafiUK5WiqLkqNW5/9kWJmpS7KS6Npfq8zK5b8BmcQihGijp9IAAAAASUVORK5CYII=')
+}
+.shqipe2{
+  position: absolute;
+  height: 42px;
+  width: 32px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAqCAYAAADS4VmSAAAFBklEQVRYR+3X67P35RTH8XfkGEKKkFPOyjmnShkpMcMYxjD1xFN/kKeeaDTRNHmgkihn0eF2LuRUCpHQwSHM6551zXxnT7H3vWfkwb1m9sz+fr/Xta7P+qzPWuv6HdHDbEc8zOd3GMD/BQNAPL/6XfXn0YR3x1T/rI6a74+q7q7umDW/r+6b/x836z0+ozq6+nv1s+qe6hGV9f+a9U+sjvXdQU+v/lG9rLq2+lvF4QeqV1XXV9+oXlL9tvpu9cHq09X94/Cxs/6i6uTquOqm6k3Va2bPpwbwo6s3VD+sjgQAuvOrC6pTqu9Vf6keU51Xvb76WPWT6q9z4NOqk6ovzvPbZt+d82zvC6uPVt8e3/Y+YfZ9a3x/YmlABK+tfjEOnlyh6Q/VS6vvVFLgHUZECOyPZ/2L5qDfjB+plIJXVj+qnjrp/eOsf+74uR8Ajs8ceuXY4dJwb/Xz6pFD65Hz7DCpsk5aGLo5Ry1Qz5u0StcD8/z4Cv3W0YggrgbA3/uqy6s3bhoTOjlYdlZ1zbAgOlECzzxjx7P3Z1Sf3+ylC2lb9s3qndUlKwWiPLuCUvRyCMDVm03vqq6YyOWTTrYmv/aJ8Jzqs5uPGAbAPixg93PYAUCZUbvNSgVlJ1Rfq/60cQLky2ez8lKiWyNm5SyIH4yf9f1J1VuqX01KlTgwBxYDp07EoqJetSuiLQM7ztvTIwb4Fqxq4hsjX10AXlypBM+rXG7dNJ09nfYgizWnZ2/KW0PSQ252oJwQjVJDMeG9eVR82X5Pnv3najrV16eipEiJXrMVodKhAbl9xXS/1Tr3i8M5uuL3p/HRgBI/KELieW91ywhML5ASovvSpn8fKghnvHVEefP0AEJ9QXXp6gPvqHQxz1t1S8d+WeBTH1gmYD7NoCsXAAIhPo0EPcrGgs8MKL3hUIy+HPaeCVBZS7PGpexvBQAdJpbp5AO060D9ADPGrgl5YMS5htJOUJwSm76y9ghE/TOAsCpQ0/eGJUK9+cTRgXcO9k7P917/JxqlikJqfjBTPVKoxIjaXPjpzAjaAgQj8u/93QvA2wexyEWsbi3UkJ4ygDjg2Dx4KF3wp6QBFYAD75oG5JvLDEYwgdGrFgCDYY1WNxXlYmSi87ZJk851+2ZE6+dUzVSNVK7Re/x0VmueNWkz6pW3mxfD6uULAEqUndz+cge3piAmTDBrTpvyXE3LcpcTGlJuX5mSM1m13Ct3+HvOCNDMuWXbiIiPCH89E02u2YeqT05uXULcZnwTzRrX9mJN/t0JaMeaD1cXjh/f3CGeOSI8eFcA4N3j1I3IzUVJikK+0bTEs4aJVLmCfWGo5V+qvDO87FnDbInZHro4fXThpuVmdQoAEBGEUkQZgVw3VytApAUrhKqG5XWV7JbdVVq0oJdcNb6VprTdMD4JXTCe71spMCZdPkVrKKFLMyIuEckjcUqRdzcOqC0Agbx6hAkMsemwoidWTUhaDCEV4rJ6zwJAtSID4KHMJjQCqpyAICRGnA5XvhxL33/zhanbF4D/cO7BT9Z9ZCYk9TvwyxsWRC+/ABm1Jt/HdzNHdgtgAaQTl0/3Ra304vnw/tGFXuFSKr+7sr0CkCpaoBHCVZJMeer9ciz3GtaubK8AllPDRkW4tjGlS/mG1Z7sUAE45HVTrjv//58B0DNQz6Ri5++EXQHZDwMOMLDY+k25q0O3i/YLYM8H7txwGMBhBv4NZig43gxQpzkAAAAASUVORK5CYII=')
+}
+</style>
+
+<title>Gëzuar Ditën e Pavarësisë</title>
+  
+</head>
+
+<body>
+
+<h1><a href="https://www.entonbiba.com/codes/happy-albania-flag-day-background">View the code blog post on my website and download the code from github.</a></h1>
+
+<script>
+alert('Gëzuar Ditën e Pavarësisë!');
+var windowheight = window.screen.height;
+var windowwidth = window.screen.width;
+var shqarr = ['shqipe', 'shqipe2'];;
+for (var i=0; i<720; i++) {
+  var shq = var rand = shqarr[Math.floor(Math.random() * shqarr.length)];
+  var shqipe = '<span id="'+i+'" class="'+shq+'"></span>';
+  var rotateleaf = random(0,150);
+  var topmargin = random(0,windowheight);
+  var leftmargin = random(0,windowwidth);
+  var opacity = random(0.01,1);
+  $('body').append(shqipe);
+  $('#'+i).css('transform','rotate('+rotateleaf+'deg)').css('top',topmargin+'px').css('left',leftmargin+'px').css('opacity',opacity+'');
+
+  setInterval(function(){
+    console.log(i);
+    var opacity = random(0.01,1);
+    var shqipenum = Math.round(Math.random() * 1000) - 1;
+    $('.shqipe:eq('+shqipenum+')').animate({
+      opacity: opacity
+    }, 1000);
+  }, 1500);
+
+}
+
+function random(min, max) {
+  return Math.random() * (max - min) + min;
+}
+</script>
+
+</body>
+</html>
